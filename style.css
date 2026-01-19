@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: #ffffff;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #f8f8f8;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.sidebar nav a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    margin: 15px 0;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.sidebar nav a:hover {
+    color: orange;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #222;
+}
+
+.hero h1 span {
+    color: red;
+}
+
+.hero h2 {
+    font-size: 22px;
+    color: #999;
+    margin: 15px 0;
+}
+
+.hero p {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    background: orange;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-outline {
+    border: 2px solid orange;
+    color: orange;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 4px;
+}
