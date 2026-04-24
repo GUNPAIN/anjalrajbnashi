@@ -1,2 +1,0 @@
-# anjalrajbnashi
-my details 
