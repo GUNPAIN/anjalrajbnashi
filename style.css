@@ -1,0 +1,325 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+/* NAVBAR */
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 60px;
+  background: black;
+  color: white;
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+header.scrolled {
+  background: white;
+}
+
+nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* HERO CENTER (vertical + horizontal) */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* IMAGE CONTAINER */
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* IMAGE STYLE */
+.profile img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;   /* makes circle */
+  object-fit: cover;
+  border: 5px solid #ff4d5a; /* frame */
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* HOVER EFFECT */
+.profile img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+/* SOCIAL ICONS - TOP LEFT */
+.social-icons {
+  position: fixed;
+  top: 20px;     /* top corner */
+  left: 20px;    /* left corner */
+  display: flex;
+  flex-direction: row;  /* horizontal row */
+  gap: 20px;
+  z-index: 1000;
+}
+
+
+
+
+
+
+
+
+
+
+/* ICON STYLE */
+.social-icons a {
+  color: white;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+/* HOVER EFFECT */
+.social-icons a:hover {
+  color: #ff4d5a;
+  transform: scale(1.2);
+}
+
+/* HERO BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;   /* rectangle shape */
+  background-color: #ff0000;  /* red background */
+  color: white;               /* white text */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;         /* slight rectangle curve */
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+
+/* ABOUT SECTION CENTER */
+.about {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* TITLE */
+.about-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* CONTAINER */
+.about-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* EACH BOX */
+.about-box {
+  background: white;
+  width: 300px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.about-box:hover {
+  transform: translateY(-10px);
+}
+
+/* SKILL BAR */
+.bar {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #ff4d5a;
+}
+
+.progress.html { width: 90%; }
+.progress.js { width: 70%; }
+.progress.responsive { width: 85%; }
+.progress.design { width: 80%; }
+
+
+/* GALLERY TITLE */
+.gallery {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* GRID CONTAINER */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 15px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* IMAGES */
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+
+/* CONTACT SECTION */
+.contact {
+  padding: 80px 20px;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+/* TITLE */
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact-sub {
+  color: #bbb;
+  margin-bottom: 40px;
+}
+
+/* HORIZONTAL LAYOUT */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  flex-wrap: wrap; /* makes it responsive */
+}
+
+/* FORM BOX */
+.contact-form {
+  width: 350px;
+  background: rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+/* INPUTS */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* BUTTON */
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: #ff4d5a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* INFO BOX */
+.contact-info {
+  width: 300px;
+  background: white;
+  color: black;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: left;
+}
